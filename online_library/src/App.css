@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+input{
+  margin: 10px;
+  margin-right: 5px;
+  border:none;
+  outline: none;
+  background-color:rgb(255, 251, 251);
+  padding:1vw;
+  border-radius:10px;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: space-evenly;
+
+}
+.card{
+  cursor: pointer;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius:10px;
+  background-color:brown;
+  color:white;
+}
+
+.card img{
+  margin-top:-16px;
+  height:40vh;
+  width: 100%;
+  background-color: black;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+
+button[type='submit']{
+  background-color:#007FFF;
+  color: white;
+  border-top:none;
+  border-left: none;
+  padding:1vw;
+  border-radius: 10px;
+}
+#modal{
+  display: flex;
+  /* flex-direction: column; */
+  gap:2vw;
+  border-radius: 10px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  /* width: 700; */
+  background-color:white;
+  padding-right: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+#modal img{
+  width: 100%;
+  height:100%;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.img{
+  width:35vw;
+  max-height:300px;
+}
+.title{
+  padding:0;
+  margin-bottom:0;
+  font-size:25px;
+  font-weight: 900;
+  text-shadow: 2px 1px grey;
+}
+.name{
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  padding:0;
+  margin:0;
+  font-size:18px;
+  color: gray;
+  font-weight: 900;
+  color:red;
+}
+.year{
+  font-size: 14px;
+  font-weight: 500;
+  color:grey;
+}
+.pages{
+  font-size: 14px;
+  font-weight: 500;
+  color:grey;
+}
+.link {
+  padding:1vw;
+  background-color: rgb(203, 203, 203);
+  width: fit-content;
+  border-radius: 10px;
+}
+.link a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar{
+  width: 100%;
+  margin-bottom: 1vw;
+  background-color: rgb(226, 149, 76);
+  position: sticky;
+  top:0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+}
+
+.err{
+  font-size: 50px;
+  color: red;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  #modal{
+    width:70%;
+  }
+  .img{
+    width:75vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  #modal{
+    width:90%;
+  }
+  .img{
+    width:110vw;
+
+  }
+  .err{
+    font-size: 30px;
+    color: red;
+    font-weight: 900;
+  }
+}
